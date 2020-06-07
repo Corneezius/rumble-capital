@@ -13,6 +13,17 @@ $(document).ready(function() {
 			$('#bars').show();
 		}, 3500);
 
+
+		$( "#skip" ).click(function() {
+			$('#project-title').hide();
+			$('#bars').hide();
+			$('#artist-name').hide();
+
+		setTimeout(function(){
+			$('body').removeClass("noscroll");
+			$('body').addClass('loaded');
+		}, 500);
+		});
 // hides
 	  // setTimeout(function(){
 		// 	$('#project-title').hide();
